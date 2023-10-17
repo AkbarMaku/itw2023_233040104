@@ -20,7 +20,10 @@ p {
 .p1 {
     color: orange;
 }
-.p2:link {
+.name:link {
     color: white;
     text-decoration: none;
+}
+.p2 {
+    line-height: 2;
 }
