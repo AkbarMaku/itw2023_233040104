@@ -1,0 +1,50 @@
+body {
+    background-color: aqua;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: comic sans ms;
+    font-size: 60px;
+    color: darkblue;
+}
+
+h4 {
+    text-align: right;
+    font-style: italic;
+}
+
+p {
+    text-align: center;
+    text-indent: 10%;
+}
+
+.p1 {
+    color: orange;
+}
+
+.name {
+    color: white;
+    text-decoration: none;
+}
+
+.name:hover {
+    color: red;
+}
+
+.name2 {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.name2:hover {
+    color: white;
+    background-color: blue;
+}
+
+.p2 {
+    line-height: 2;
+}
