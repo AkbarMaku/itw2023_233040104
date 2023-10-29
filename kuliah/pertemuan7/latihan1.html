@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>pertemuan 7 - </title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .kotak {
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+            margin: 50px auto;
+            border-top-left-radius: 30px;
+            border-radius: 50% 0 50% 50%;
+            text-align: center;
+        }
+
+        .kotak2 {
+            background-color: blue;
+            /* box-shadow: <x-offset> <y-offset> <blur> [size] <color>; */
+            box-shadow: 0 0 0 10px red, 0 0 0 20px yellow, 0 0 0 30px green, 0 0 0 40px black;
+            border-radius: 0;
+        }
+
+        .kotak2:hover {
+            transition: 10s;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kotak">
+        <p>Halo Saya Akbar Maku</p>
+    </div>
+    <div class="kotak2"></div>
+</body>
+
+</html>
