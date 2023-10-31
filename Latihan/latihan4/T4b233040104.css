@@ -307,6 +307,13 @@ nav ul li a:hover
     margin-top: 5px;
 }
 
+.artikel
+{
+   margin-top: 50px; 
+   font-size: 20px;
+   font-family: cursive;
+}
+
 .tentang
 {
     display: grid;
