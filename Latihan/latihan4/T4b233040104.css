@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body
+{
+    background-color: olive;
+    color: white;
+}
+
+header
+{
+    text-align: center;
+    background-color: olivedrab;
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    padding: 2%;
+    top: 0;
+}
+
+.title
+{
+    color: midnightblue;
+    border-bottom: 1px solid gray;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.input-search
+{
+    width: 25%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    padding: 1px;
+}
+
+.input-submit
+{
+    margin-left: -5px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    padding: 1px;
+    background-color: midnightblue;
+    color: gray;
+    width: 5%;
+}
+
+nav 
+{
+    margin-top: 20px;
+}
+
+nav ul 
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a
+{
+    color: midnightblue;
+    font-family: cursive;
+}
+
+nav ul li a:hover
+{
+    border-bottom: 3px solid gray;
+}
+
+.slider
+{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+    font-family: cursive;
+    color: gray;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 10px;
+    width: 50rem;
+}
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: midnightblue;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: gray;
+    font-family: comic sans ms;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: salmon;
+}
+
+.popup .close:hover 
+{
+    color: olivedrab;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.title-l
+{
+    margin-top: 5%;
+    margin-left: 65px;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    color: gray;
+}
+
+.list
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: cursive;
+}
+
+.list img
+{
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.harga
+{
+    color: gray;
+}
+
+.pesan
+{
+    color: salmon;
+}
+
+.pesan:hover
+{
+    color: white;
+}
+
+.link a
+{
+    color: gray;
+}
+
+.link a:hover
+{
+    color: midnightblue;
+}
+
+.title-s
+{
+    margin-top: 5%;
+    margin-left: 65px;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    color: gray;
+}
+
+.stream
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: cursive;
+}
+
+.stream img
+{
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15pt;
+    font-family: cursive;
+}
+ 
+.card
+{
+    background-color: olivedrab;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 20px 20px black;
+}
+ 
+.card h1
+{
+    text-align: center;
+}
+
+.title-f
+{
+    color: midnightblue;
+}
+ 
+html
+{
+    scroll-behavior: smooth;
+}
+ 
+ 
+footer
+{
+    display: grid;
+    justify-content: center;
+    background-color: olivedrab;
+    margin-top: 10%;
+    padding: 2%;
+}
+ 
+.sosmed img 
+{
+    width: 50px;
+}
+ 
+#copyright
+{
+    text-align: center;
+    padding: 10px;
+}
+
