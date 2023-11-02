@@ -1,0 +1,248 @@
+/* style */
+* {
+    font-family: comic sans ms;
+}
+
+body {
+    font: 18px/36px 'comic sans ms';
+    background-image: url(full/background.jpg);
+    background-repeat: repeat-y;
+    background-size: 1280px;
+    min-height: 1000px;
+    
+    background-position: 0 -550px;
+    
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: palevioletred;
+    color: plum;
+    position: absolute;
+    margin-top: -20%;
+    padding-top: 20px;
+    padding-left: 10px;
+    box-shadow: 0px 1px 50px plum;
+}
+
+.header span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header nav {
+    margin-left: 850px;
+    margin-top: -20px;
+}
+.header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a
+{
+    text-decoration: none;
+    text-align: right;
+    color: plum;
+}
+
+.h1 {
+    margin-top: 20%;
+    margin-bottom: 50px;
+    text-align: center;
+    color: plum;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 4px 3px 5px black;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: rgba(128, 128, 128, .1);
+    padding: 20px;
+    box-shadow: 0 0 0 5px rgb(0, 255, 255, .1);
+    border-radius: 10px;
+}
+
+.gallery li {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow hidden;
+    border: 5px solid rgba(221, 160, 221, .1);
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.gallery .helga1,
+.helga2,
+.helga3,
+.helga4 {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(216, 112, 147, .5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 150px;
+    color: plum;
+    text-shadow: 3px 3px 3px palevioletred;
+    opacity: 0;
+    transition: .3s;
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+}
+
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 15%;
+    font-size: 15pt;
+    font-family: cursive;
+}
+
+.card
+{
+    background-color:  rgba(221, 160, 221, .3);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 20px 20px black;
+}
+ 
+.card .h2
+{
+    text-align: center;
+    color: plum;
+    font-weight: bold;
+}
+
+.card a
+{
+    text-decoration: none;
+    color: plum;
+}
+
+.tentang p
+{
+    margin-top: -20px;
+    color: white;
+}
+
+footer
+{
+    display: grid;
+    justify-content: center;
+    background-color: palevioletred;
+    margin-top: 11%;
+    padding: 2%;
+    box-shadow: 0px 1px 50px plum;
+}
+
+.sosmed h1
+{
+    text-align: center;
+    color: plum;
+    font-weight: bold;
+}
+ 
+.sosmed img 
+{
+    width: 50px;
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    text-align: center;
+    padding: 100px 0;
+    transition: 1s;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 5px 5px 5px rgba(221, 160, 221, .5);
+}
+
+.overlay:target img {
+    animation: FadeIn 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 60px;
+    right: 480px;
+    font-size: 30px;
+    font-family: comic sans ms;
+    font-weight: bold;
+    text-decoration: none;
+    color: palevioletred;
+    background-color: white;
+    border: 1px solid black;
+    width: 30px;
+    height: 35px;
+    line-height: 33px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.overlay:target .close {
+    animation: SlideLeft .7s .3s forwards;
+}
+
+
+/* animasi */
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes SlideLeft {
+    0% {
+        margin-right: -20px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
