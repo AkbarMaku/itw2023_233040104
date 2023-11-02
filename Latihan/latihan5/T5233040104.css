@@ -169,7 +169,8 @@ footer
 }
 
 /* overlay */
-.overlay {
+.overlay
+{
     width: 0;
     height: 0;
     overflow: hidden;
@@ -183,7 +184,8 @@ footer
     transition: 1s;
 }
 
-.overlay:target {
+.overlay:target 
+{
     width: auto;
     height: auto;
     right: 0;
@@ -191,16 +193,19 @@ footer
     background-color: rgba(0, 0, 0, .5);
 }
 
-.overlay img {
+.overlay img 
+{
     max-height: 100%;
     box-shadow: 5px 5px 5px rgba(221, 160, 221, .5);
 }
 
-.overlay:target img {
+.overlay:target img 
+{
     animation: FadeIn 1s;
 }
 
-.overlay .close {
+.overlay .close 
+{
     position: absolute;
     top: 60px;
     right: 480px;
@@ -218,12 +223,50 @@ footer
     transition: 1s;
 }
 
-.overlay:target .close {
+.overlay:target .close 
+{
     animation: SlideLeft .7s .3s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .back
+{
+    animation: ZoomIn .7s .3s forwards;
+}
+
+
+/* navigasi */
+.next, .back
+{
+    width: 60px;
+    height: 60px;
+    background-image: url(next.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 45%;
+    margin-left: 40px;
+    opacity: 0;
+}
+
+.back
+{
+    background-image: url(back.png);
+    margin-left: -100px;
 }
 
 
 /* animasi */
+@keyframes ZoomIn{
+    0%{
+        scale: 0;
+        opacity: 0;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
 @keyframes FadeIn {
     0% {
         opacity: 0;
